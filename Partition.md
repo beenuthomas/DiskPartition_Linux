@@ -73,9 +73,9 @@ root@beenu:~#  df -h                                                           #
 ```
 **Syntax 2:** `<device>` `<mount point> ` `<filesystem>` `<options>` `<dump>` `<fsck> `          ## Permanent Mount, which will persist after reboot
 ```
-root@beenu:~# sudo vim  /etc/fstab
-/dev/sda4 /mnt/mypartition ext3 defaults  0 0                                                        ## Write and quit(:wq) from vim editor
-root@beenu:~# sudo mount -a                                                                          ## Mount all devices in the fstab
+root@beenu:~# vim  /etc/fstab
+/dev/sda4 /mnt/mypartition ext3 defaults  0 0                                                   ## Write and quit(:wq) from vim editor
+root@beenu:~# mount -a                                                                          ## Mount all devices in the fstab
 root@beenu:~# df -h
 ```
 
